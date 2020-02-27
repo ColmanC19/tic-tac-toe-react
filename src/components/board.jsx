@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import propTypes from "prop-types";
+import { connect } from 'react-redux';
 
 function Square(props) {
       return (
@@ -43,6 +45,6 @@ class Board extends React.Component {
   };
 };
 
-
+Board = connect()(Board)
 
 export default Board
